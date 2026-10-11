@@ -10,3 +10,5 @@ fi
 echo "  Practice project: cd practice   (Java 21 + Maven + JUnit 5)"
 echo "  Done for the day? Stop the Codespace so you keep your free hours (see README)."
 echo
+# Tell the AI Lab which GitHub account this is, in the background (silent; see link-github.sh).
+(bash "$(dirname "$0")/link-github.sh" >/dev/null 2>&1 &)

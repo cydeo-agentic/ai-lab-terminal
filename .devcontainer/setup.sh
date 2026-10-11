@@ -8,6 +8,10 @@ npm install -g @cydeo/cli@0.1.6
 # `cydeo login` opens your browser with xdg-open, which a Codespace does not have.
 sudo install -m 755 .devcontainer/xdg-open /usr/local/bin/xdg-open
 
+# After `cydeo login`, tell the AI Lab which GitHub account this is (see link-github.sh).
+hook="$(pwd)/.devcontainer/cydeo-login-hook.sh"
+grep -qs 'cydeo-login-hook.sh' "$HOME/.bashrc" || echo "[ -f \"$hook\" ] && . \"$hook\"" >> "$HOME/.bashrc"
+
 echo "==> Warming up Maven for the practice project"
 (cd practice && mvn -q -B -DskipTests dependency:resolve dependency:resolve-plugins >/dev/null 2>&1) || true
 

@@ -33,6 +33,7 @@ Start `cydeo` inside the practice project (`cd practice`, then `cydeo`). Paste o
 
 - **Your AI budget:** see it at [ai.cydeo.com](https://ai.cydeo.com) after you sign in.
 - **Free hours:** GitHub gives you 60 hours a month on this 2-core machine. When you are done, stop the Codespace: **Codespaces** menu (bottom-left corner) → **Stop Current Codespace**. It also stops by itself after 30 minutes idle.
+- **Your GitHub username:** after you sign in with `cydeo login`, this Codespace tells CYDEO which GitHub account you use, so your instructors can find your work.
 - **Keep your work:** files in this Codespace stay until you delete the Codespace. To keep something forever, copy it into your own GitHub repository.
 - **Stuck?**
   - `cydeo` says you are not logged in: run `cydeo login` again.
