@@ -1,0 +1,28 @@
+{
+  "name": "CYDEO AI Lab · terminal",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "jdkDistro": "tem",
+      "installMaven": "true"
+    }
+  },
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postAttachCommand": "bash .devcontainer/welcome.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "workbench.startupEditor": "none",
+        "editor.minimap.enabled": false
+      }
+    },
+    "codespaces": {
+      "openFiles": ["README.md"]
+    }
+  }
+}
